@@ -15,6 +15,5 @@ class EmailParser
       address.email = address
       address
     end
-    parser
   end
 end
