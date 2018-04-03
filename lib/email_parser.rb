@@ -6,7 +6,7 @@ class EmailParser
     @@all
   end
 
-  def self.parse(name)
+  def self.parse
     @@all.detect{|x| x.name == name}
   end
 
