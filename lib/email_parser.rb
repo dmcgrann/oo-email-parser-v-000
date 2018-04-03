@@ -6,5 +6,5 @@ class EmailParser
   end
 
   def parse
-    self.split.collect {|a| a.split(",")}
+    self.collect {|a| a.split(",")}
 end
