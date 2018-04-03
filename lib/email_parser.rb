@@ -8,5 +8,6 @@ class EmailParser
   def self.parse(list)
     rows = list.split("\n")
     parser = rows.collect {|x| x.email == x}
+    email
   end
 end
