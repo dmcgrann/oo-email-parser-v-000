@@ -7,7 +7,7 @@ class EmailParser
     @@all << self
   end
 
-  def self.find_by_parse(parse)
-    @@all.split("").collect {|x| x.parse == parse}
+  def self.find_by_parse(email)
+    @@all.split("").collect {|x| x.email == email}
   end
 end
