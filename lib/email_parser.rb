@@ -8,6 +8,6 @@ class EmailParser
   end
 
   def self.find_by_parse(parse)
-    @@all.split("").collect {|email| email.uniq == email}
+    @@all.split("").collect {|x| x.email == email}
   end
 end
