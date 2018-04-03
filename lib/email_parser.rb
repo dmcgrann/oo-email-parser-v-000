@@ -1,5 +1,5 @@
-require 'ccsv'
-
-Ccsv.foreach(file) do |values|
-  puts values[0]
-end
+require 'csv'
+ 
+ CSV.open('data.csv', 'r', ';') do |row|
+   puts row
+ end
