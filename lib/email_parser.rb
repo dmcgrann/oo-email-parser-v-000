@@ -1,5 +1,3 @@
-require 'csv'
-
-CSV.open('data.csv', 'r', ';') do |row|
-  puts row
+class EmailParser
+  CSV.parse(emails) {|row| row.inspect}
 end
