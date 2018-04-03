@@ -1,6 +1,10 @@
 class EmailParser
   attr_accessor :email
 
+  def initialize(email)
+    self
+  end
+
   def self.new_from_csv(csv_data)
     rows = csv_data.split("\n")
     parser = rows.collect do |row|
