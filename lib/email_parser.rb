@@ -1,7 +1,7 @@
 class EmailParser
   attr_accessor :email, :parse
   @@rows = []
-  
+
   def initialize(email)
     self
     @@rows << self
