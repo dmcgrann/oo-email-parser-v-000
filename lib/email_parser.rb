@@ -2,6 +2,6 @@ class EmailParser
   attr_accessor :name
 
   def parse
-    puts "#{name}"
+    self.all.detect{|email| email.name == name}
   end
 end
