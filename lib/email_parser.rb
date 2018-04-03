@@ -4,7 +4,7 @@ class EmailParser
 
   def initialize
     self
-    @all << self
+    @@all << self
   end
 
   def self.find_by_parse(parse)
