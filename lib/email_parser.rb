@@ -7,7 +7,7 @@ class EmailParser
     @@rows << self
   end
 
-  def self.parse(email)
+  def self.parse_by_email(email)
     @@rows.split("\n").select {|x| x.email == email}
   end
 end
