@@ -4,7 +4,7 @@ class EmailParser
   def initialize(email)
     self
   end
-  
+
   def parse(list)
     rows = lists.split("\n")
     parser = rows.collect do |row|
