@@ -5,7 +5,7 @@ class EmailParser
     @emails = emails
   end
 
-  def parse(emails)
+  def parse
     emails.split.collect {|a| a.split(",").flatten.uniq}
   end
 end
