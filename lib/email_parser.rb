@@ -10,7 +10,7 @@ class EmailParser
     @@all
   end
 
-  def parse(name)
+  def parse
     @@all.detect{|x| x.name == name}
   end
 
