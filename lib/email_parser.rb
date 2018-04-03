@@ -10,9 +10,9 @@ class EmailParser
     parser = rows.collect do |row|
       data = row.split(", ")
 
-      emails = self.new
-      emails.data = data
-      emails
+      email = self.new
+      email.data = data
+      email
     end
   end
 end
