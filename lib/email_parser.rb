@@ -6,6 +6,7 @@ class EmailParser
   end
 
   def self.parse(email)
-    @email
+    @email.each do |email|
+      email
   end
 end
