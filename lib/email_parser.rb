@@ -1,11 +1,13 @@
 class EmailParser
   attr_accessor :email, :parse
+  @@all = []
 
-  def initialize(email)
+  def initialize
     self
+    @all << self
   end
 
-  def self.parse
-    self.split("").collect {|email| email.uniq}
+  def self.find_by_parse(parse)
+    @@all.split("").collect {|email| email.uniq}
   end
 end
