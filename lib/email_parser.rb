@@ -6,6 +6,6 @@ class EmailParser
   end
 
   def parse
-    emails.split.collect {|list| list.split(",")}.uniq
+    emails.split.collect {|list| list.split(",")}.flatten.uniq
   end
 end
