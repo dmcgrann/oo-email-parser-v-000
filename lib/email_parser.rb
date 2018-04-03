@@ -4,7 +4,7 @@ class EmailParser
 
   def initialize(email)
     self
-    parser << self
+    @@parser << self
   end
 
   def self.parse(email)
