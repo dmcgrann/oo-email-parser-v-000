@@ -8,4 +8,9 @@ class EmailParser
   def self.all
     @@all
   end
+  def self.create(emails)
+    list = self.new
+    list.emails = emails
+    @@all << list
+  end
 end
