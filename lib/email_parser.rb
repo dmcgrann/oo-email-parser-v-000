@@ -8,5 +8,5 @@ class EmailParser
     emails = self.new
     emails
   end
-    
+
 end
