@@ -2,7 +2,9 @@ class EmailParser
   attr_accessor :email, :address
 
   def initialize
-    @email
-    @address
+    self
   end
+
+  def parse
+    email.split.collect {|a| a.split(",")}
 end
