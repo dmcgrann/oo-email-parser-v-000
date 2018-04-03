@@ -6,6 +6,6 @@ class EmailParser
   end
 
   def self.parse(email)
-    email
+    @email
   end
 end
