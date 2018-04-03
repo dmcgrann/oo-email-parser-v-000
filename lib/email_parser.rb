@@ -8,7 +8,7 @@ class EmailParser
   def self.parse(list)
     rows = lists.split("\n")
     parser = rows.collect do |row|
-      data = row.split(", ")
+      d = row.split(", ")
 
       email = self.new
       email.parse = parse
