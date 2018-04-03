@@ -8,4 +8,5 @@ class EmailParser
 
   def parse
     self.collect {|a| a}
+  end
 end
