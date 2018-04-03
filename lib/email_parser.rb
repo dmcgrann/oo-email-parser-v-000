@@ -2,12 +2,10 @@ class EmailParser
   attr_accessor :name
 
   def initialize(name)
-    self
+    @name
   end
 
-  def self.parse(list)
-    parser = list.split(" ") || list.split(", ")
-    parser.collect{|x| x.name == name}
+  def parse
+    self.collect{|e| e.name = name}
   end
-
 end
