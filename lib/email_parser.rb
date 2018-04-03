@@ -6,6 +6,7 @@ class EmailParser
   end
 
   def self.parse(email)
-    self.collect {|a| av9@test.com}
+    self.collect {|a|}
+    []
   end
 end
