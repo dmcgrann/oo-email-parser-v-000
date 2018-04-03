@@ -1,7 +1,11 @@
 class EmailParser
-  attr_accessor :name
+  attr_accessor :name, :emails
 
-  def parse
-    self.all.detect{|email| email.name == name}
+  def initialize
+    @emails = emails
+  end
+
+  def parse(emails)
+    emails.split.collect {|name| name.split(",").flatten.uniq}
   end
 end
