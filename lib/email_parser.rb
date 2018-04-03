@@ -10,4 +10,5 @@ class EmailParser
   def self.parse(email)
     @@rows.split("\n").select {|x| x.email == x}
   end
+  email
 end
