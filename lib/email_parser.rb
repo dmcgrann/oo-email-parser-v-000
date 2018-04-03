@@ -6,6 +6,6 @@ class EmailParser
   end
 
   def parse
-    self.collect{|e| e.name = name}
+    self.map{|e| e.name = name}
   end
 end
