@@ -16,4 +16,5 @@ class EmailParser
       address
     end
   end
+  anything
 end
