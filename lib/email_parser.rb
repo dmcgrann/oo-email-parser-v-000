@@ -6,13 +6,8 @@ class EmailParser
   end
 
   def self.parse(list)
-    rows = lists.split("\n")
-    parser = rows.collect do |row|
-      d = row.split(", ")
-
-      email = self.new
-      email.parse = parse
-      email
-    end
+    email = self.new
+    email.parse = parse
+    email
   end
 end
