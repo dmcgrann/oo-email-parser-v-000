@@ -1,10 +1,7 @@
 class EmailParser
-
-  def initialize(name)
-    @name = name
-  end
-
-  def parse(email, name)
-    email.detect{|e| e.name = name}
+  attr_accessor :name
+  
+  def parse
+    puts "#{name}"
   end
 end
