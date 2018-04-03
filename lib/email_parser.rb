@@ -8,7 +8,6 @@ class EmailParser
   end
 
   def self.parse(email)
-    f = @@parser.split(", ").select {|x| x.email == email}
-    f
+    f = @@parser.split(", ").collect {|x| x.email == email}
   end
 end
