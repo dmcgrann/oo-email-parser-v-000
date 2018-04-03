@@ -3,7 +3,7 @@ class EmailParser
   @@all = []
 
   def initialize(email)
-    self
+    @email
     @@all << self
   end
 
