@@ -5,7 +5,7 @@ class EmailParser
     self
   end
 
-  def parse(list)
+  def self.parse(list)
     parser = list.split(" ") || list.split(", ")
     parser.collect{|x| x.name == name}
   end
