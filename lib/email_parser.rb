@@ -1,17 +1,12 @@
 class EmailParser
   attr_accessor :name
-  @@all = []
 
   def initialize(name)
     self
   end
 
-  def self.all
-    @@all
-  end
-
-  def parse
-    parser = @@all.split(" ") || @@all.split(", ")
+  def self.parse(list)
+    parser = list.split(" ") || list.split(", ")
     parser.collect{|x| x.name == name}
   end
 
