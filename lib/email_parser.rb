@@ -7,6 +7,8 @@ class EmailParser
     @@parser << self
   end
 
+  result = nil
+
   def self.parse(email)
     f = @@parser.split(", ").collect {|x| x.email == email}
   end
