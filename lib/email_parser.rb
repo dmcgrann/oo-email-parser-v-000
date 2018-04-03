@@ -1,13 +1,13 @@
 class EmailParser
   attr_accessor :email, :parse
-  @@rows = []
+  @@parser = []
 
   def initialize(email)
     self
-    @@rows << self
+    parser << self
   end
 
   def self.parse(email)
-    @@rows.split(", ").select {|x| x.email == email}
+    @@parser.split(", ").select {|x| x.email == email}
   end
 end
