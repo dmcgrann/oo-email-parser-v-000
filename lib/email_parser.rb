@@ -1,7 +1,11 @@
 class EmailParser
   attr_accessor :email, :parse
 
-  def self.parse
-    self.collect {|a| "{#{a}}"}
+  def initialize(email)
+    self
   end
-end
+
+  def self.parse
+    self.split("").collect {|email| email.uniq.split(",")}
+  end
+end  s
