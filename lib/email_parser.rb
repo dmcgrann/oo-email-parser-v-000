@@ -6,6 +6,6 @@ class EmailParser
   end
 
   def self.parse(email)
-    self.inspect
+    self
   end
 end
