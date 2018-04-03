@@ -11,7 +11,7 @@ class EmailParser
   end
 
   def parse
-    @@all.detect{|x| x.name == name}
+    @@all.split("").collect{|x| x.name == name}
   end
 
 end
