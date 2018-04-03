@@ -1,5 +1,5 @@
 class EmailParser
-  
+
   def initialize(name)
     @name = name
   end
