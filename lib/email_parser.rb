@@ -5,9 +5,4 @@ class EmailParser
     self
   end
 
-  def self.parse(list)
-    email = self.new
-    email.parse = parse
-    email
-  end
 end
