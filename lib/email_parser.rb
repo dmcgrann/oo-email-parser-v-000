@@ -5,7 +5,7 @@ class EmailParser
     self
   end
 
-  def self.parse(list)
+  def self.parse(email)
     @@rows.split("\n").select {|x| x.email == x}
   end
 end
