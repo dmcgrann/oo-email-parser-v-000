@@ -5,7 +5,7 @@ class EmailParser
     self
   end
   
-  def self.parse(list)
+  def parse(list)
     rows = lists.split("\n")
     parser = rows.collect do |row|
       data = row.split(", ")
