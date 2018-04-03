@@ -5,12 +5,4 @@
 
 class EmailParser
   
-  def initialize
-    self
-  end
-
-  def self.parse
-    self.collect {|e| e.split(" ") || e.split(", ")}
-  end
-
 end
