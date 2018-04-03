@@ -4,7 +4,7 @@ class EmailParser
     @name = name
   end
 
-  def parse
-    self.detect{|e| e.name = name}
+  def parse(email, name)
+    email.detect{|e| e.name = name}
   end
 end
