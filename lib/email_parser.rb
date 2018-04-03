@@ -6,6 +6,6 @@ class EmailParser
   end
 
   def self.parse
-    self.split("").collect {|email| email.uniq.split(",")}
+    self.split("").collect {|email| email.uniq}
   end
-end  
+end
