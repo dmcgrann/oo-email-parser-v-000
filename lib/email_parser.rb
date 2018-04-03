@@ -1,7 +1,7 @@
 class EmailParser
   attr_accessor :email, :parse
 
-  def self.parse(email)
+  def self.parse
     self.collect {|a|}
     "{#{email}}"
   end
