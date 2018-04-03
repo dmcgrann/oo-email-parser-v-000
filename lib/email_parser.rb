@@ -12,5 +12,5 @@ class EmailParser
       data = row.splt(", ")
     end
   end
-  
+
 end
