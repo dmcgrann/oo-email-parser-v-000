@@ -5,7 +5,7 @@ class EmailParser
     self
   end
 
-  def self.new_from_csv(csv_data)
+  def self.parse(csv_data)
     rows = csv_data.split("\n")
     parser = rows.collect do |row|
       data = row.split(", ")
@@ -15,6 +15,5 @@ class EmailParser
       address.email = address
       address
     end
-    self
   end
 end
