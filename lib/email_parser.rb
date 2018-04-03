@@ -1,14 +1,14 @@
 class EmailParser
-  attr_accessor :emails
-
-  def initialize
-    self
-  end
+  attr_accessor :data
 
   def self.parse(list)
-    rows = lists.split(" ")
-    parser = self.new
-    parser.email = emails
-    parser
+    rows = lists.split("\n")
+    parser = rows.collect do |row|
+      data = row.split(", ")
+
+      emails = self.new
+      emails.data = data
+      emails
+    end
   end
 end
