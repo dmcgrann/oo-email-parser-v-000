@@ -1,13 +1,6 @@
-class EmailParser
-  attr_accessor :email, :parse
-  @@parser = []
-
-  def initialize(email)
-    self
-    @@parser << self
-  end
-
-  def self.parse(email)
-    f = @@parser.collect {|x| x.email == email}
-  end
+require 'rubygems'
+require 'ccsv'
+ 
+Ccsv.foreach(file) do |values|
+  puts values[0]
 end
