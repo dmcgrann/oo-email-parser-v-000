@@ -6,6 +6,6 @@ class EmailParser
   end
 
   def self.parse(email)
-    self.map{|x| x.email == email}
+    self.inspect
   end
 end
