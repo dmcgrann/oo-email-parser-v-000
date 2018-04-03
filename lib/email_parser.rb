@@ -8,4 +8,4 @@ class EmailParser
   def self.parse
     self.split("").collect {|email| email.uniq.split(",")}
   end
-end  s
+end  
